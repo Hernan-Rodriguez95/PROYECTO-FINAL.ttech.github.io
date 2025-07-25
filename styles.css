@@ -1,0 +1,416 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+*  font-size: 22px;
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/*PALETA DE COLORES*/
+/*ESCUDO
+#f3b229 - dorado
+#103f79 - azul
+CAMISETA
+#000000 - negro
+#afef20 - amarillo
+##ffffff - blanco
+#0f1ed5 - azul
+*/
+p {
+   margin: auto;
+   font-style: oblique;
+   padding-top: 5%;
+   cursor: text;
+
+}
+.parrafos{
+   border: #ffffff solid;
+   background-color: #afef20;
+   color: #000000;
+   border-radius: 13px;
+   width: 300px;
+   margin: 3%;
+   text-align: center;
+   padding-bottom: 10px;
+   padding-top: 0;
+}
+
+h1 {
+   text-align:center;
+ } 
+
+h2 {
+   text-align:center;/* center | justify | right | left */
+ }
+ 
+.cuadros{
+   border: 3px #000000 solid;
+   background-color: #afef20;
+   backdrop-filter: blur(20px);
+   border: #ffffff solid 10px;
+   border-radius: 13px;
+   width: 350px;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   padding-left: 1%;
+   margin-left: 70%;
+   text-align: justify;
+   transition: 2.0s ease;
+   width: calc(33.33% - 20px);
+
+}
+
+.cuadros:hover{
+   background-color: #103f79;
+   color: #f3b229;
+   transition: 2.0s ease;
+   border: #000000 solid 10px;
+   background: transparent url('imagenes/HD-wallpaper-martin-palermo-boca-juniors-genio-martinpalermo.jpg');
+   cursor: text;
+   transform: scale(1.09);
+
+}
+body {
+   padding:0;
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #103f79;
+   justify-items: auto;
+   background-image: url(imagenes/WhatsApp\ Image\ 2025-07-25\ at\ 11.27.55.jpeg);
+   background-position: top 10%;
+   position: static;
+}
+
+.menu {
+   width: 150px;
+   color: #103f79;
+   font-family: calibri;
+   margin: auto;
+   padding: 0%;
+   
+}
+menu :hover{
+   background-color: #103f79;
+}
+
+
+
+nav {
+   float: right;
+   width: 600px;
+
+}
+
+nav ul li {
+   list-style: none;
+   margin-left: 20px ;
+   left: 50%;
+   padding: 5px 0;
+   float: right;
+   position: relative;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #103f79;
+   font-weight: bold; 
+   font-size: 20px;
+}
+
+nav ul li a::before {
+   display: block;
+   content: "";
+   width: 0%;
+   margin: 0%;
+   background: #103f79;
+   color: #103f79;
+   height: 8px;
+   top: 0;
+   position: absolute;
+   transition: width 0.25s;
+}
+nav ul li a:hover::before {
+   width: 100%;
+}
+
+.banner {
+   background-color: #afef20 ;
+   text-align: right;
+   padding: 0;
+   margin-top: 2px;
+   margin-bottom: 3px;
+   border:#ffffff solid 3px;
+   /*background-image: url('imagenes/footer-boca.avif');*/
+   background-position: center;
+   /*background-position-x: left;
+   /*backgroun: cover - amplia la imagen*/
+
+}
+
+.fixed {
+   position: fixed;
+   height: 10%;
+   width: 0;
+   bottom: 5%;
+   right: 7%;
+   cursor: pointer;
+
+}
+.fixed img{
+   height: 60px;
+   width: 50px;
+   
+}
+
+.fixed1 {
+   position:absolute;
+   width: 15%;
+   left: 15px;
+   top: 50px;
+
+}
+.fixed1 img{
+   position: relative;
+}
+   
+input {
+   border:3px solid ;
+   background-color: #ffffff;
+   font-family: Georgia, 'Times New Roman', Times, serif;color: #0f1ed5;
+   cursor: text;
+   overflow: hidden; /* Oculta el texto que aún no se ha "escrito" */
+   border-right: .15em solid #f3b229; /* Cursor que parpadea, puedes cambiar el color */
+   white-space: nowrap; /* Evita que el texto se divida en líneas */
+   margin: 0 auto; /* Centra el contenedor */
+   letter-spacing: .15em; /* Espacio entre letras para simular el espaciado de una máquina de escribir */
+   animation: typing 3.5s steps(40, end), /* Duración de la animación y número de pasos */
+   blink-caret .75s step-end infinite; /* Duración y frecuencia del parpadeo del cursor */
+}
+/*EFECTO DE TIPEADO*/
+@keyframes typing {
+  from {
+   width: 0; /* El texto comienza invisible */
+  }
+  to {
+   width: 100%; /* El texto se va mostrando por completo */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+   border-color: transparent; /* El cursor desaparece y reaparece */
+  }
+  50% {
+   border-color: #103f79; /* Color del cursor al aparecer */
+  }
+}
+
+
+.form-registro {
+   font-size: 15px;
+   width: 350px;
+   padding: 25px;
+   margin: auto;
+   right: 3%;
+   padding-bottom: 1%;
+   padding-top: 1%;
+   padding-right: 3%;
+   padding-left: 3%;
+   border: #afef20 solid 3px;
+   background-image: url(imagenes/Flag_of_BOCA.jpg);
+   border-radius: 13px;
+   transition: all 0.8s;
+   
+}
+.form-registro:hover{
+   background-image: url(imagenes/WhatsApp\ Image\ 2025-07-25\ at\ 11.27.55\ \(1\).jpeg);
+   transition: all 1.2s;
+}
+.form-registro h1{
+   color: #afef20;
+   background-color: #001b58;
+   border-radius: 13px;
+   transition: all 0.8s;
+}
+
+.form-registro h1:hover{
+   background-color: #f3b229;
+   color: #103f79;
+   border: #ffffff 2px;
+   transform: scale(1.09);
+
+}
+.controls {
+   width: 100%;
+   padding: 6px;
+   border-radius: 6px;
+   margin-bottom: 20px;
+   border: 2px solid #0f1ed5;
+   font-size: 15px;
+}
+.controls1 {
+   width: 100%;
+   background: #ffffff;
+   padding: 6px;
+   border-radius: 6px;
+   margin-bottom: 20px;
+   border: 2px solid #0f1ed5;
+   font-size: 6px;
+}
+
+.form-registro p{
+   height: 100px;
+   text-align: center;
+   font-size: 15px;
+
+
+}
+.form-registro a{
+   color: ghostwhite;
+   background-color: ghostwhite;
+   text-decoration: underline;
+}
+.form-registro .botons {
+   width: 100%;
+   border: 4px;
+   border-radius: 70px;
+   padding: 10px;
+   margin: 10px 0;
+   font-size: 20px;
+}
+iframe {
+   border-radius: 12%;
+}
+
+footer{
+   background-color: #f3b229;
+   height: 15px;
+   padding-bottom: 5%;
+   padding-top: 0.5%;
+   border: #ffffff solid 2px;
+}
+/*AGREGAR UNA IMAGEN EN EL FOOTER*/
+footer img{
+   width: 100px;
+   height:80px;
+   position: static;
+   
+}
+.icons{
+   background-color: transparent;
+   color: #0f1ed5;
+   font-size: 25px;
+   margin-left: 45%;
+   position: absolute;
+   cursor: pointer;
+
+}
+.icons i{
+   margin: 0;
+   font-size: 50px;
+   cursor: pointer;
+   position: relative;
+   transition: all .8s;
+}
+.icons i:hover{
+   color: #f3b229;
+   background-color: #103f79;
+   border: #ffffff solid 3px;
+   border-radius: 100px;
+   transition: all 1.2s;
+}
+
+button {
+   font-size: 25px;
+   padding: 10px 70px;
+   border: solid 2px #001b58 ;
+   border-radius: 5px;
+   transition: 1.0s ease;
+   cursor: pointer;
+   background-color: #001b58;
+   color: #ffed27;
+    
+}
+button:hover {
+   background-color: #f3b229;
+   color: #103f79;
+   border: #ffffff 2px;
+   cursor: pointer;
+   transform: scale(1.09);
+
+}
+/*ESPACIO DE ADAPTABILIDAD DE PANTALLA */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+@media  (max-width: 390px) {
+   body {background-image: url(imagenes/WhatsApp\ Image\ 2025-07-25\ at\ 11.27.55\ \(1\).jpeg) ;width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+   .nav-list {width: calc(50% - 20px);
+   }
+}
+
+@media (max-width: 380px) {
+   .nav-list {width: 65%;
+   }
+}
+
+@media (max-width: 768px) {
+   .fixed {width: calc(50% - 20px);
+   }
+}
+
+@media (max-width: 370px) {
+   .fixed {width: 10%;
+   }
+}
+
+@media (max-width: 768px) {
+   .cuadros {width: calc(50% - 20px);
+      }
+}
+
+@media (max-width: 390px) {
+   .cuadros {width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+   .form-registro {width: calc(50% - 20px);
+      }
+}
+
+@media (max-width: 400px) {
+   .form-registro {width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   .icons {width: calc(50% - 20px);
+   }
+}
+
+@media (max-width: 380px) {
+   .icons {width: 50%;
+   }
+}
+@media(max-width: 768px) {
+   .banner {width: calc(50% - 20 px);
+   }
+}
+
+@media (max-width: 380px) {
+   .banner {width: 100%;};
+}
